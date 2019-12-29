@@ -25,9 +25,21 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <style>
+      .addFontSize > .small {
+        font-size: 12px;
+      }
+      .addFontSize > .large {
+        font-size: 16px;
+      }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <button class="addFontSize" onclick="handleClick()">
+      <span class="small">A</span>
+      <span class="large">A</span>
+    </button>
     <div id="root"></div>
     <!--
       This HTML file is a template.
@@ -40,4 +52,13 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <script>
+    function handleClick() {
+      const app = document.querySelector(".list");
+      const button = document.querySelector(".square");
+
+      app.style.fontSize = "20px";
+      button.style.fontSize = "20px";
+    }
+  </script>
 </html>
