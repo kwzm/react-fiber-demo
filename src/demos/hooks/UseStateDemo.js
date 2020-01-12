@@ -5,6 +5,7 @@ function UseStateDemo() {
 
   const handleClick = () => {
     setCount(count => count + 1);
+    setCount(count => count + 1);
   };
 
   return (
